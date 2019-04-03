@@ -1,0 +1,47 @@
+---
+title: "Investigate Customer Buying Patterns"
+author: "Your Name"
+date: "1968-02-30"
+output: html_document
+--- 
+
+# This is a header
+
+I'm a paragraph, hi! I can do cool thinks like:
+
+* *Be in italics*
+* Be **Bold**
+* Or be ~~wrong~~
+
+Below is a code chunk
+
+```{r}
+# Load the data inside your system
+data <- read.csv("C:/Users/T450S/Desktop/Floriana/Ubiqum/RMarkdown/Blackwell_Hist_Sample.csv")
+
+# Show the summary of the data
+summary(data)
+
+```
+
+
+The iris dataset has `r nrow(data)` observations. 
+
+```{r}
+# Creating an histogram of the age
+hist(data$age)
+``` 
+
+Some observationbs about this chart:
+
+* one observation
+
+```{r}
+# Creating a scatter plot of the age
+plot(data$age, data$salary)
+``` 
+
+# Show min and max of age
+The minimum age is `r min(data$age)`
+
+The maxmimum age is `r max(data$age)`
